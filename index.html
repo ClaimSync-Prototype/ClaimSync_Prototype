@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClaimSync CRM Prototype</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; height: 100vh; }
+    nav { width: 220px; background-color: #f4f4f4; padding: 20px; border-right: 1px solid #ccc; }
+    nav h2 { font-size: 18px; margin-bottom: 10px; }
+    nav ul { list-style: none; padding: 0; }
+    nav ul li { margin: 10px 0; }
+    nav ul li a { text-decoration: none; color: #333; }
+    main { flex-grow: 1; padding: 20px; overflow-y: scroll; }
+    section { margin-bottom: 30px; }
+    h1, h3 { color: #2c3e50; }
+    .card { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 6px; background: #fff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>ClaimSync CRM</h2>
+    <ul>
+      <li><a href="#home">Dashboard</a></li>
+      <li><a href="#intake">New Claim Intake</a></li>
+      <li><a href="#claims">Claims List</a></li>
+      <li><a href="#tasks">Tasks & Alerts</a></li>
+      <li><a href="#contractors">Contractor Management</a></li>
+      <li><a href="#payments">Payments</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home">
+      <h1>Dashboard</h1>
+      <p>Welcome to ClaimSync CRM. Use the left menu to navigate your claim workflow.</p>
+    </section>
+    <section id="intake">
+      <h3>New Claim Intake</h3>
+      <div class="card">
+        <p><strong>Client Name:</strong> <input type="text"></p>
+        <p><strong>Date of Loss:</strong> <input type="date"></p>
+        <p><strong>Insurance Carrier:</strong> <input type="text"></p>
+        <p><strong>Service Type:</strong> <input type="checkbox"> Adjusting <input type="checkbox"> Restoration</p>
+      </div>
+    </section>
+    <section id="claims">
+      <h3>Claims List</h3>
+      <div class="card">
+        <p><strong>Claim ID:</strong> CLM-00123</p>
+        <p><strong>Status:</strong> Investigating</p>
+        <p><strong>Assigned To:</strong> Jane Doe</p>
+      </div>
+    </section>
+    <section id="tasks">
+      <h3>Tasks & Alerts</h3>
+      <div class="card">
+        <p>Review fire report - <strong>Due:</strong> 05/15/2024</p>
+        <p>Schedule property inspection</p>
+      </div>
+    </section>
+    <section id="contractors">
+      <h3>Contractor Management</h3>
+      <div class="card">
+        <p><strong>Vendor:</strong> CleanPro Restoration</p>
+        <p>Status: In Progress</p>
+        <p>Job Type: Smoke Removal</p>
+      </div>
+    </section>
+    <section id="payments">
+      <h3>Payments</h3>
+      <div class="card">
+        <p><strong>Invoice #:</strong> INV-2031</p>
+        <p><strong>Amount:</strong> $4,250</p>
+        <p>Status: Awaiting Payment</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
